@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffb3c1">
+  <title>Para Vanesa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="fondo" aria-hidden="true"></div>
+  <div id="palabras" class="palabras" aria-hidden="true"></div>
+  <div class="progreso" aria-hidden="true"><span id="barra"></span></div>
+
+  <section id="portada" class="portada" aria-label="Portada">
+    <div id="sobre" class="sobre" aria-hidden="true">
+      <div class="sobre-cuerpo"></div>
+      <div class="sobre-carta"></div>
+      <div class="sobre-frente"></div>
+      <div class="sobre-solapa"></div>
+      <span class="sello heart"></span>
+    </div>
+    <button id="btn-abrir" class="btn-abrir" type="button" aria-label="Abrir la carta" aria-controls="carta">Abrir</button>
+    <p class="nota-portada">Te recomiendo ver la cartita en pc :3</p>
+  </section>
+
+  <main id="carta" class="carta" hidden>
+    <article id="mensaje" class="papel" tabindex="-1" aria-label="Carta para Vanesa">
+
+      <h1 class="titulo">Para mi amongucita</h1>
+
+      <div class="corazones" aria-hidden="true"><span class="heart"></span><span class="heart"></span><span class="heart"></span></div>
+
+      <h2 class="capitulo">Un detallito pensado para ti</h2>
+      <p><span class="saludo">Hola mi amorcita</span>, ñoshe cuando estes leyendo esto poque el regalito que te habia pedido llego antes de lo esperado jsjsjsjs, tengo muchas cosas que decirte mi amor pero antes que nada espero que te haya gustado mucho el detallito mi amor, pense en ti para cada cosa que este contiene :3.</p>
+
+      <!-- IMAGEN 1: cambia la ruta en src -->
+      <figure class="foto">
+        <div class="foto-marco">
+          <div class="placeholder" aria-hidden="true"><span class="heart"></span></div>
+          <img src="./img/manitos.jpg" alt="Foto de nuestras manitos juntas" loading="lazy">
+        </div>
+        <figcaption>Un recuerdo de nuestras manitos juntas.</figcaption>
+      </figure>
+
+      <h2 class="capitulo">Lo que siento por ti</h2>
+      <p>No tengo palabras para describir todo lo que siento por ti mi amor, muchas veces trato de hayarle una razon logica a mi sentir, pero nunca la encuentro, eso es lo lindo y hermoso de este sentimiento.</p>
+
+      <div class="corazones" aria-hidden="true"><span class="heart"></span><span class="heart"></span><span class="heart"></span></div>
+
+      <h2 class="capitulo">Gracias por caminar a mi lado</h2>
+      <p>Todas las noches antes de dormir rezo agradeciendo por todo, y tengo una seccion unica en la que le agradezo a Dios por permitirme estar a tu lado en este camino :3, puede que yo no sea el novio mas lindo, mas adinerado, mas cariñoso, mas tierno o el mas inteligente pero quiero que shepas que cada dia me esfuerzo mas para ser el novio que una princesa como tu se merece.</p>
+
+      <!-- IMAGEN 2 -->
+      <figure class="foto">
+        <div class="foto-marco">
+          <div class="placeholder" aria-hidden="true"><span class="heart"></span></div>
+          <img src="./img/vanesa.jpg" alt="Foto de Vanesa, mi amorcita" loading="lazy">
+        </div>
+        <figcaption>Una fotito de mi amorcita (Tambien es mi foto de Osu :0).</figcaption>
+      </figure>
+
+      <h2 class="capitulo">Y pensar que todo empezó jugando...</h2>
+      <p>Quien diria que aquel dia en el que jugamos juntos nos llevaria tan lejos, desde aquel entonces simplemente cada dia siento mas amor por ti, recuerdo que nuestra primera conversacion en whatsapp fue luego de jugar, yo le habia pedido tu numero a Sopa para hablar contigo, el mensaje que empezo todo fue:</p>
+      <blockquote class="recuerdo-chat">
+        <span class="chat-etiqueta">Nuestro primer mensajito</span>
+        <p>“Hellou Panquesito, soy el hermano de la Sopa :P”</p>
+      </blockquote>
+      <p>Y justo te estabas tomando un remedio que tenia aceite de tiburon jsjsjsjsjsjs, recuerdo que tenias gripita.</p>
+
+      <!-- IMAGEN 3 -->
+      <figure class="foto">
+        <div class="foto-marco">
+          <div class="placeholder" aria-hidden="true"><span class="heart"></span></div>
+          <img src="./img/remedio.jpeg" alt="Foto del remedio con aceite de tiburón" loading="lazy">
+        </div>
+        <figcaption>El famoso remedio con aceite de tiburón jsjsjsjsjsjs.</figcaption>
+      </figure>
+
+      <h2 class="capitulo">Cada día, más cerquita</h2>
+      <p>Luego de eso cada dia nos hablabamos, estabamos juntitos, te sentia cerca a pesar de la distancia que nos separaba, ne fui encariñando de ti poco a poco, de tu forma de hablar, de tu sentido del humor, de tu forma de ver el mundo, de tus gustos, de tu manera de vestir, de tu vocesita, de todo lo que tuviera que ver contigo me fui enamorando, recuerdo perfectamente el primer regalito que me diste, fue un sabado cuando recien habia llegado del Sena y no pense que me fuera a esperar un detalle tan lindo de la persona que mas queria :3.</p>
+
+      <section class="linea-tiempo" aria-labelledby="titulo-recuerdos">
+        <h2 id="titulo-recuerdos" class="capitulo">Pequeños grandes momentos</h2>
+        <ol>
+          <li><span class="hito">El primer audio</span><span>La primera vez que te escuche hablar.</span></li>
+          <li><span class="hito">El primer regalito</span><span>Ese detalle lindo que me esperaba al volver del Sena.</span></li>
+          <li><span class="hito">Encuentro</span><span>Cuando nos conocimos por primera vez en persona.</span></li>
+          <li><span class="hito">Un abracito</span><span>Un abrazo muy tierno en el cual casi nos caemos jsjsjsjsjs.</span></li>
+          <li><span class="hito">Nuestro primer besito</span><span>Uno de esos momentos tiernos que guardo en mi corazón.</span></li>
+          <li><span class="hito">Cici y tu declaración</span><span>El momento en que me animé a dar ese pasito contigo.</span></li>
+          <li><span class="hito">La presentacion</span><span>El gran momento de presentarme ante tu familia :3.</span></li>
+          <li class="hito-futuro">
+            <span class="hito">Y todo lo que nos falta por vivir juntos</span>
+            <span>Esta historia sigue escribiéndose; aquí quedan espacios para todos los recuerdos bonitos que todavía vamos a crear.</span>
+            <div class="espacios-futuro" aria-hidden="true"><span></span><span></span><span></span></div>
+          </li>
+        </ol>
+      </section>
+
+      <div class="corazones" aria-hidden="true"><span class="heart"></span><span class="heart"></span><span class="heart"></span></div>
+
+      <h2 class="capitulo">Me alegra haberme arriesgado</h2>
+      <p>Estoy muy feliz de haberme arriesgado por ti, si bien estaba muy asustado de lo que podria pasar, mi amor era mas fuerte que mi temor, me diste a Cici para declararte y me senti seguro a tu lado, estoy muy contento de la desicion que tome, porque te amo, te amo mi niña, te amo con todo mi corazoncito de pollito, me encantas mi chocorramito, te adoro mi amongucita :3, adoro estar a tu lado, juntos formamos momentos bonitos, momentos tiernos, como nuestro primer besito :3.</p>
+
+      <p>Espero que te guste mucho este detallito que sale de todo el amor y cariño que siento por ti mi amor.</p>
+
+      <footer class="cierre">
+        <div class="separador-corazon" aria-hidden="true"><span class="heart"></span></div>
+        <p class="firma">Con amor tu niño :3.</p>
+
+        <p class="invitacion">Y todavía guardé un detallito más para ti...</p>
+        <button id="btn-corazon" class="btn-corazon" type="button" aria-label="Corazón: tócalo para que salgan corazoncitos y aparezca una sorpresa" aria-controls="sorpresa" aria-expanded="false">
+          <span class="heart latido"></span>
+          <span class="sr-only">Ver la sorpresa</span>
+        </button>
+        <p class="ayuda-corazon">Toca el corazoncito para ver tu sorpresa</p>
+      </footer>
+
+      <!-- SORPRESA FINAL (aparece al tocar el corazón) -->
+      <div id="sorpresa" class="sorpresa" hidden>
+        <figure class="foto">
+          <div class="foto-marco">
+            <div class="placeholder" aria-hidden="true"><span class="heart"></span></div>
+            <img src="./img/final.jpg" alt="Foto especial de nosotros dos" loading="lazy">
+          </div>
+          <figcaption>Un recuerdo nuestro para guardar cerquita.</figcaption>
+        </figure>
+        <p class="frase">Te amo mash de lo que puedo explicar mi princesa</p>
+        <p class="muak">Muak &lt;3</p>
+        <div class="corazones" aria-hidden="true"><span class="heart"></span><span class="heart"></span><span class="heart"></span></div>
+      </div>
+
+      <div class="carta-cierre">
+        <button id="btn-cerrar-carta" class="btn-cerrar-carta" type="button">Cerrar</button>
+        <p id="despedida" class="despedida" hidden aria-live="polite">Chauuuuuuuuuuuu</p>
+      </div>
+    </article>
+  </main>
+
+  <!-- Visor para ampliar fotos -->
+  <dialog id="visor" class="visor" aria-label="Foto ampliada">
+    <img id="visor-img" src="" alt="">
+    <button id="visor-cerrar" class="visor-cerrar" type="button" aria-label="Cerrar foto">✕</button>
+  </dialog>
+</body>
+</html>
