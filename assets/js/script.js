@@ -42,6 +42,38 @@
   var visorImg;
   var visorCerrar;
 
+  fechaAcceso.addEventListener("input", function () {
+    var posicion = fechaAcceso.selectionStart;
+    var digitosAntes = fechaAcceso.value.slice(0, posicion).replace(/\D/g, "").length;
+    var digitos = fechaAcceso.value.replace(/\D/g, "").slice(0, 8);
+    var valor = digitos;
+
+    if (digitos.length > 2) {
+      valor = digitos.slice(0, 2) + "/" + digitos.slice(2);
+    }
+    if (digitos.length > 4) {
+      valor = digitos.slice(0, 2) + "/" + digitos.slice(2, 4) + "/" + digitos.slice(4);
+    }
+
+    fechaAcceso.value = valor;
+    if (posicion !== null) {
+      var nuevaPosicion = 0;
+      var digitosContados = 0;
+      while (nuevaPosicion < valor.length && digitosContados < digitosAntes) {
+        if (/\d/.test(valor.charAt(nuevaPosicion))) digitosContados++;
+        nuevaPosicion++;
+      }
+      if (digitosAntes >= 2 && valor.charAt(nuevaPosicion) === "/") nuevaPosicion++;
+      if (digitosAntes >= 4 && valor.charAt(nuevaPosicion) === "/") nuevaPosicion++;
+      fechaAcceso.setSelectionRange(nuevaPosicion, nuevaPosicion);
+    }
+
+    if (fechaAcceso.hasAttribute("aria-invalid")) {
+      fechaAcceso.removeAttribute("aria-invalid");
+      errorAcceso.textContent = "";
+    }
+  });
+
   function aleatorio(min, max) {
     return Math.random() * (max - min) + min;
   }
